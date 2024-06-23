@@ -11,7 +11,7 @@
         <h1>Serenid Quest</h1>
         <div id="welcome-screen">
             <h2>Bem-vindo a Serenia!</h2>
-            <p>Você é um explorador em Serenia, uma terra mágica onde o Mestre da Serenidade guia aventureiros como você em busca dos Cristais da Energia, Foco, Sono e Imunidade. Esses cristais ajudarão você a descobrir como melhorar sua saúde e bem-estar. Vamos iniciar a sua jornada!</p>
+            <p>Você é um explorador em Serenia, uma terra mágica onde o Mestre da Serenidade guia aventureiros como você em busca dos Cristais da Energia e Foco. Esses cristais ajudarão você a descobrir como melhorar sua saúde e bem-estar. Vamos iniciar a sua jornada!</p>
             <label for="explorer-name">Qual é seu nome de explorador?</label>
             <input type="text" id="explorer-name">
             <button onclick="startGame()">Iniciar Jornada</button>
@@ -27,7 +27,7 @@
                 <option value="sono">Melhorar a qualidade do sono</option>
                 <option value="imunidade">Fortalecer o sistema imunológico</option>
             </select>
-            <button onclick="nextScreen('energy-goal')">Próximo</button>
+            <button onclick="nextEnergyStep()">Próximo</button>
         </div>
 
         <div id="energy-feedback" class="game-screen">
@@ -38,7 +38,7 @@
                 <option value="sim">Sim</option>
                 <option value="não">Não</option>
             </select>
-            <button onclick="nextScreen('fatigue-question')">Próximo</button>
+            <button onclick="nextFocusScreen()">Próximo</button>
         </div>
 
         <div id="focus-screen" class="game-screen">
@@ -49,7 +49,7 @@
                 <option value="sim">Sim</option>
                 <option value="não">Não</option>
             </select>
-            <button onclick="nextScreen('focus-difficulty')">Próximo</button>
+            <button onclick="nextFocusStep()">Próximo</button>
         </div>
 
         <div id="focus-feedback" class="game-screen">
@@ -62,7 +62,7 @@
                 <option value="tv">Assistir TV</option>
                 <option value="sono">Ficar sem dormir</option>
             </select>
-            <button onclick="nextScreen('focus-activity')">Próximo</button>
+            <button onclick="showConclusion()">Próximo</button>
         </div>
 
         <div id="conclusion-screen" class="game-screen">
